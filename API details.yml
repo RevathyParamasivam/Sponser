@@ -1,0 +1,88 @@
+      is_whats_app: 
+     
+      promotional_office: 
+      lang_id:
+       name *:
+      email_id *: 
+      mobile_no *: 
+      country_code * :
+      place:
+      dob: 
+      title: 
+      do_marraige: 
+      newsletter: 
+       
+       
+      street,
+      address,
+      country,
+      state,
+      village,
+      city,
+      ward,
+      panchayat,
+      sponsor_id => on update
+     sponsorship : [
+          remarks:,
+      is_monthly: 
+      sponsorship_module:,
+      amount: 
+      sponsor_id:,
+      report_language:,
+      preference:,
+      promotional_office:,
+      total_support:,
+      payment_status:,
+      dedication_request: 
+      is_revert: 
+      is_alloted: 
+      arrival_date_time:
+      place:
+      dept_date_time:, 
+      date_time: new 
+     ]
+
+    
+
+
+     //API 
+     POST
+      https://dev.gemsbihar.info/api/api/v1/sponsor/save
+
+ remarks:,
+      is_monthly: 
+      sponsorship_module:,
+      amount:                                    sponsor_id:,
+      report_language:,
+      preference:,
+      promotional_office:,
+      total_support:,
+      payment_status:,
+      dedication_request: 
+      is_revert: 
+      is_alloted: 
+      arrival_date_time:
+      place:
+      dept_date_time:, 
+      date_time: new 
+      sponsor_id : 
+      https://dev.gemsbihar.info/api/api/v1/sponsorship/save
+
+GET method
+      https://dev.gemsbihar.info/api/api/v1/getCountryPhone
+
+      GET 
+       https://dev.gemsbihar.info/api/api/v1/users/isUnique/mobile_no/${id} => with country  code 91xxxxx
+
+       https://dev.gemsbihar.info/api/api/v1/users/isUnique/email_id/${id} => with country  code 91xxxxx
+       
+       |Status code: 200 : success
+       400: Validation error
+       500: Logical issues 
+
+username => mobileno_with country code
+password :sponsor@2022
+
+
+       =>register -> redirect to login => first_login  => change password 
+=>
