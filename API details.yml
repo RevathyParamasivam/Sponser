@@ -79,10 +79,33 @@ GET method
        |Status code: 200 : success
        400: Validation error
        500: Logical issues 
-
+      401: Token not found
 username => mobileno_with country code
 password :sponsor@2022
 
 
        =>register -> redirect to login => first_login  => change password 
 =>
+
+
+
+const apiData=    {
+  is_whats_app: true,     
+  promotional_office:"", 
+  lang_id:"1",
+   name:"Test",
+   email_id:"revathy.paramasivam@gmail.com", 
+    mobile_no:"9095005850", 
+      place:"Cuddalore",
+      country_code:"91",
+      dob:"",
+      title:"", 
+      do_marraige:"", 
+      newsletter:"" 
+}
+console.log('call' ,apiData)
+
+const Url="https://dev.gemsbihar.info/api/api/v1/sponsor/save";
+            let Data={"is_whats_app": true,"promotional_office":"","lang_id":"1","name":"Test","email_id":"revathy.paramasivam.9@gmail.com","place":"Cuddalore","country_code":"91","dob":"01-01-0001","title":"test","do_marraige":"","newsletter":""};
+                        console.log(Data);
+        
