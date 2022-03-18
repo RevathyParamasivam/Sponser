@@ -1,7 +1,8 @@
-
-
+<script>
+  
+  </script>
   <main id="main" class="main">
-
+  <div><p id="cookie">Test</p></div>
     <div class="pagetitle">
       <h1>Dashboard</h1>
       <nav>

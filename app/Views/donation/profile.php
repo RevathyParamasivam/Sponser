@@ -4,7 +4,7 @@
       <h1>Profile</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
           <li class="breadcrumb-item active">Profile</li>
         </ol>
       </nav>
@@ -18,7 +18,7 @@
             <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
 
               <img src="boot\assests\img\profile-img.jpg" alt="Profile" class="rounded-circle">
-              <h2>Kevin Anderson</h2>
+              <h2><span id="profileName"></span></h2>
               
             </div>
           </div>
@@ -53,39 +53,59 @@
 
                   <div class="row">
                     <div class="col-lg-3 col-md-4 label ">Full Name</div>
-                    <div class="col-lg-9 col-md-8">Kevin Anderson</div>
+                    <div class="col-lg-9 col-md-8"><span id="name"></span></div>
                   </div>
-
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">E-Mail</div>
-                    <div class="col-lg-9 col-md-8">test@gmail.com</div>
+                    <div class="col-lg-3 col-md-4 label ">Gender</div>
+                    <div class="col-lg-9 col-md-8"><span id="gender"></span></div>
                   </div>
-
                   <div class="row">
                     <div class="col-lg-3 col-md-4 label">Mobile Number</div>
-                    <div class="col-lg-9 col-md-8">1234567890</div>
+                    <div class="col-lg-9 col-md-8"><span id="mobile"></span></div>
                   </div>
-
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Country</div>
-                    <div class="col-lg-9 col-md-8">India</div>
+                    <div class="col-lg-3 col-md-4 label">E-Mail</div>
+                    <div class="col-lg-9 col-md-8"><span id="email"></span></div>
                   </div>
-
                   <div class="row">
                     <div class="col-lg-3 col-md-4 label">Date of Birth</div>
-                    <div class="col-lg-9 col-md-8">xx-xx-xxxx</div>
+                    <div class="col-lg-9 col-md-8"><span id="dob"></span></div>
                   </div>
 
                   <div class="row">
                     <div class="col-lg-3 col-md-4 label">Date of Marriage</div>
-                    <div class="col-lg-9 col-md-8">xx-xx-xxxx</div>
+                    <div class="col-lg-9 col-md-8"><span id="dom"></span></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Street</div>
+                    <div class="col-lg-9 col-md-8"><span id="street"></span></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Address</div>
+                    <div class="col-lg-9 col-md-8"><span id="address"></span></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">District</div>
+                    <div class="col-lg-9 col-md-8"><span id="district"></span></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">State</div>
+                    <div class="col-lg-9 col-md-8"><span id="state"></span></div>
                   </div>
 
                   <div class="row">
-                    <div class="col-lg-3 col-md-4 label">Address</div>
-                    <div class="col-lg-9 col-md-8">A108 Adam Street, New York, NY 535022</div>
+                    <div class="col-lg-3 col-md-4 label">Country</div>
+                    <div class="col-lg-9 col-md-8"><span id="country"></span></div>
                   </div>
-
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Pincode</div>
+                    <div class="col-lg-9 col-md-8"><span id="pincode"></span></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Language</div>
+                    <div class="col-lg-9 col-md-8"><span id="language"></span></div>
+                  </div>
+                  
                 </div>
 
                 <div class="tab-pane fade profile-edit pt-3" id="profile-edit">
@@ -106,38 +126,66 @@
                     <div class="row mb-3">
                       <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Full Name</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="fullName" type="text" class="form-control" id="fullName" value="Kevin Anderson">
+                        <input name="fullName" type="text" class="form-control" id="fullName" value="">
                       </div>
                     </div>
                     <div class="row mb-3">
-                      <label for="Email" class="col-md-4 col-lg-3 col-form-label">Email</label>
+                      <label for="sponserGender" class="col-md-4 col-lg-3 col-form-label">Gender</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="email" type="email" class="form-control" id="Email" value="k.anderson@example.com">
-                      </div>
+                        <select class="form-control" id="sponserGender" name="sponserGender" required="true" >
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                        </select>
+                    </div>
                     </div>
                     <div class="row mb-3">
-                      <label for="about" class="col-md-4 col-lg-3 col-form-label">About</label>
+                      <label for="sponserMobile" class="col-md-4 col-lg-3 col-form-label">Mobile Number</label>
                       <div class="col-md-8 col-lg-9">
-                        <textarea name="about" class="form-control" id="about" style="height: 100px">Sunt est soluta temporibus accusantium neque nam maiores cumque temporibus. Tempora libero non est unde veniam est qui dolor. Ut sunt iure rerum quae quisquam autem eveniet perspiciatis odit. Fuga sequi sed ea saepe at unde.</textarea>
+                        <input name="sponserMobile" type="text" class="form-control" id="sponserMobile" value="" readonly>
                       </div>
                     </div>
 
                     <div class="row mb-3">
-                      <label for="company" class="col-md-4 col-lg-3 col-form-label">Mobile Number</label>
+                      <label for="sponserEmail" class="col-md-4 col-lg-3 col-form-label">Email</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="company" type="text" class="form-control" id="company" value="1234567890">
+                        <input name="sponserEmail" type="email" class="form-control" id="sponserEmail" value="">
                       </div>
                     </div>
-                    <div class="row mb-3"">
-                        <label for="company" class="col-md-4 col-lg-3 col-form-label">Whatsapp Number</label>
+                    <div class="row mb-3" style="display:none">
+                        <label for="sponserWhatsapp" class="col-md-4 col-lg-3 col-form-label">Whatsapp Number</label>
                         <div class="col-md-8 col-lg-9">
-                        <input name="company" type="text" class="form-control" id="company" value="1234567890">
+                        <input name="sponserWhatsapp" type="text" class="form-control" id="sponserWhatsapp" value="">
                         </div>             
-                      </div>
+                    </div>
                     <div class="row mb-3">
-                      <label for="Country" class="col-md-4 col-lg-3 col-form-label">Country</label>
+                      <label for="dob" class="col-md-4 col-lg-3 col-form-label">Date of Birth</label>
                       <div class="col-md-8 col-lg-9">
-                        <select class="form-control" id="country" name="country" onChange="updateState()" required="true" >
+                        <input name="sponserDob" type="date" class="form-control" id="sponserDob" >
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label for="sponserdom" class="col-md-4 col-lg-3 col-form-label">Date of Marriage</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="sponserDom" type="date" class="form-control" id="sponserDom" >
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="sponserStreet" class="col-md-4 col-lg-3 col-form-label">Street</label>
+                        <div class="col-md-8 col-lg-9">
+                        <input name="sponserStreet" type="text" class="form-control" id="sponserStreet" value="">
+                        </div>             
+                    </div>
+                    <div class="row mb-3">
+                      <label for="sponserAddress" class="col-md-4 col-lg-3 col-form-label">Address</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="sponserAddress" type="text" class="form-control" id="sponserAddress" value="">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="sponserCountry" class="col-md-4 col-lg-3 col-form-label">Country</label>
+                      <div class="col-md-8 col-lg-9">
+                        <select class="form-control" id="sponserCountry" name="sponserCountry" onChange="updateState('','')" required="true" >
                                         <?php
                                         $contents_donatefor = fopen("https://dev.gemsbihar.info/api/api/v1//get/country", "r");
                                         $json_donatefor = stream_get_contents($contents_donatefor);
@@ -146,60 +194,42 @@
                                         foreach($data_donatefor->result as $row)
                                         { 
                                         ?>
-                                        <option value=".<?= $row->id; ?>."><?= $row->countryName; ?></option>
+                                        <option value="<?= $row->id;?>"><?= $row->countryName; ?></option>
                                         
                                         <?php }?>
                                     </select>
                       </div>
-                    </div>
+                    </div>                    
                     <div class="row mb-3">
-                      <label for="dob" class="col-md-4 col-lg-3 col-form-label">Date of Birth</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="dob" type="date" class="form-control" id="dob" >
-                      </div>
-                    </div>
-                    <div class="row mb-3">
-                      <label for="dom" class="col-md-4 col-lg-3 col-form-label">Date of Marriage</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="dom" type="date" class="form-control" id="dom" >
-                      </div>
-                    </div>
-                    <div class="row mb-3">
-                      <label for="Address1" class="col-md-4 col-lg-3 col-form-label">House No./Plot</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="address1" type="text" class="form-control" id="address1" value="A108">
-                      </div>
-                    </div>
-                    <div class="row mb-3">
-                      <label for="Address2" class="col-md-4 col-lg-3 col-form-label">Street, City</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="address2" type="text" class="form-control" id="address2" value="Adam Street">
-                      </div>
-                    </div>
-                    <div class="row mb-3">
-                                <label for="state" class="col-md-4 col-lg-3 col-form-label">State</label>
+                                <label for="sponserState" class="col-md-4 col-lg-3 col-form-label">State</label>
                                 <div class="col-md-8 col-lg-9">
-                                    <select class="form-control" id="state" name="state">
-                                        <option value="0">Select State</option>
+                                    <select class="form-control" id="sponserState" name="sponserState" onChange="updateDistrict('','')" required="true">
+                                    <option value="0">Select State</option>
                                     </select>
                                   </div>
                       </div>
                       <div class="row mb-3">
-                                <label for="district" class="col-md-4 col-lg-3 col-form-label">District</label>
+                                <label for="sponserDistrict" class="col-md-4 col-lg-3 col-form-label">District</label>
                                 <div class="col-md-8 col-lg-9">
-                                    <select class="form-control" id="district" name="district">
-                                        <option value="0">Select District</option>
-                                    </select>
+                                    <select class="form-control" id="sponserDistrict" name="sponserDistrict">
+                                    <option value="0">Select District</option>  
+                                  </select>
                                   </div>
                       </div>
                       <div class="row mb-3">
-                      <label for="Address2" class="col-md-4 col-lg-3 col-form-label">Pincode</label>
+                      <label for="sponserPincode" class="col-md-4 col-lg-3 col-form-label">Pincode</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="pin" type="text" class="form-control" id="pin" value="000000">
+                        <input name="sponserPincode" type="text" class="form-control" id="sponserPincode" value="">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label for="sponserLanguage" class="col-md-4 col-lg-3 col-form-label">Language</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="sponserLanguage" type="text" class="form-control" id="sponserLanguage" value="" readonly>
                       </div>
                     </div>
                     <div class="text-center">
-                      <button type="submit" class="btn btn-primary">Save Changes</button>
+                      <button ID="submit" type="button" class="btn btn-primary">Save Changes</button>
                     </div>
                   </form><!-- End Profile Edit Form -->
 
@@ -249,4 +279,54 @@
     </section>
 
   </main><!-- End #main -->
+  <script>
+        
+        
+        $("#submit").on("click", function(event){
+            
+            let sponser_name=document.getElementById("fullName").value;
+            let sponser_email=document.getElementById("sponserEmail").value;
+            let genderId=document.getElementById("sponserGender");
+            let sponserGender=genderId.options[genderId.selectedIndex].value; 
+            //let sponser_mobile=document.getElementById("sponserMobile").value;
+            let sponserDob=document.getElementById("sponserDob").value;
+            let sponserDom=document.getElementById("sponserDom").value;
+            let sponserStreet=document.getElementById("sponserStreet").value;
+            let sponserAddress=document.getElementById("sponserAddress").value;
+            let sponserCountry=document.getElementById("sponserCountry");
+            let countryId=sponserCountry.options[sponserCountry.selectedIndex].value; 
+            let sponserState=document.getElementById("sponserState");
+            let stateId=sponserState.options[sponserState.selectedIndex].value; 
+            let sponserDistrict=document.getElementById("sponserDistrict");
+            let districtId=sponserDistrict.options[sponserDistrict.selectedIndex].value; 
+            let sponserPincode=document.getElementById("sponserPincode").value;
+            let sponserLanguage=document.getElementById("sponserLanguage").value;
+            let sponserId=localStorage.getItem("sponserId");
+            let countryCode='91';
+            console.log("Gender",sponserGender);
+            console.log("Country ID",countryId);
+            console.log("Street",sponserStreet);
+            console.log("pincode",sponserPincode);
+            const apiData=    {
+                sponsor_id:sponserId,
+                name:sponser_name,
+                gender:sponserGender,
+                email_id:sponser_email,
+                country_code:countryCode,
+                dob: sponserDob,
+                do_marraige:sponserDom,
+                street:sponserStreet,
+                address:sponserAddress,
+                country:countryId,
+                state:stateId,
+                district:districtId,
+                pincode:sponserPincode,
+                langName:sponserLanguage,
+                sponsorship : [] 
+            }  
+            console.log('apiData'+JSON.stringify(apiData));
+            
+            saveSponserDetails(apiData);
+  });
 
+    </script>

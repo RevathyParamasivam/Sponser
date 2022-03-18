@@ -10,7 +10,7 @@
         <link rel="apple-touch-icon" sizes="180x180" href="assets/media/favicons/apple-touch-gicon-180x180.png">
         <link rel="stylesheet" id="css-main" href="boot\assests\css\codebase.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-       
+        <script src="boot\assests\js\apifunctions.js"></script>
         <style>
             .alignCenter
             {
@@ -471,7 +471,9 @@
                 ] 
             }  
             console.log('apiData'+JSON.stringify(apiData));
-            $.ajax({
+            saveSponserDetails(apiData);
+            /*
+           $.ajax({
            url: "https://dev.gemsbihar.info/api/api/v1/sponsor/save",
            type: "POST",
            data: JSON.stringify(apiData),
@@ -486,7 +488,7 @@
                console.log(xhr ,thrownError)
               //alert('Error occured : '+thrownError+'\najaxOptions : '+ajaxOptions+'\nxhr : '+xhr);
            }
-        });
+        });*/
 
         }
             

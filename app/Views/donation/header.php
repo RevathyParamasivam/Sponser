@@ -26,9 +26,21 @@
   <link href="boot\assests\vendor\quill\quill.bubble.css" rel="stylesheet">
   <link href="boot\assests\vendor\remixicon\remixicon.css" rel="stylesheet">
   <link href="boot\assests\vendor\simple-datatables\style.css" rel="stylesheet">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.min.js" integrity="sha512-F+u8eWHrfY8Xw9BLzZ8rG/0wIvs0y+JyRJrXjp3VjtFPylAEEGwKbua5Ip/oiVhaTDaDs4eU2Xtsxjs/9ag2bQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="boot\assests\js\apifunctions.js"></script>
   <!-- Template Main CSS File -->
   <link href="boot\assests\css\style.css" rel="stylesheet">
+  <script>
+    let token=localStorage.getItem("token"); 
+    let sponserId=localStorage.getItem("sponserId");
+    console.log("Token in localStorage"+token);
+    if(token==null)
+    {
+    window.location = 'Home';
+    }
+    getSponserDetails(sponserId);
+  </script>
 </head>
 
 <body>
@@ -54,18 +66,16 @@
         <li class="nav-item dropdown pe-3">
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
             <img src="boot\assests\img\profile-img.jpg" alt="Profile" class="rounded-circle">
-            <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+            <span class="d-none d-md-block dropdown-toggle ps-2" id="header_name"></span>
           </a><!-- End Profile Iamge Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
-              <h6>Kevin Anderson</h6>
-              
+              <h6><span id="dropdown_name"></span></h6>
             </li>
             <li>
               <hr class="dropdown-divider">
             </li>
-
             <li>
               <a class="dropdown-item d-flex align-items-center" href=".\ProfileController" >
                 <i class="bi bi-person"></i>
@@ -85,7 +95,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="#">
+              <a class="dropdown-item d-flex align-items-center" onclick="logout()">
                 <i class="bi bi-box-arrow-right"></i>
                 <span>Sign Out</span>
               </a>
