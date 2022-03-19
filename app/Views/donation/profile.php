@@ -185,7 +185,7 @@
                     <div class="row mb-3">
                       <label for="sponserCountry" class="col-md-4 col-lg-3 col-form-label">Country</label>
                       <div class="col-md-8 col-lg-9">
-                        <select class="form-control" id="sponserCountry" name="sponserCountry" onChange="updateState('','')" required="true" >
+                        <select class="form-control" id="sponserCountry" name="sponserCountry" onChange="updateState1('state','','')" required="true">
                                         <?php
                                         $contents_donatefor = fopen("https://dev.gemsbihar.info/api/api/v1//get/country", "r");
                                         $json_donatefor = stream_get_contents($contents_donatefor);
@@ -203,7 +203,7 @@
                     <div class="row mb-3">
                                 <label for="sponserState" class="col-md-4 col-lg-3 col-form-label">State</label>
                                 <div class="col-md-8 col-lg-9">
-                                    <select class="form-control" id="sponserState" name="sponserState" onChange="updateDistrict('','')" required="true">
+                                    <select class="form-control" id="sponserState" name="sponserState" onChange="updateState1('district','')" required="true">
                                     <option value="0">Select State</option>
                                     </select>
                                   </div>
@@ -244,26 +244,26 @@
                     <div class="row mb-3">
                       <label for="currentPassword" class="col-md-4 col-lg-3 col-form-label">Current Password</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="password" type="password" class="form-control" id="currentPassword">
+                        <input name="password" type="password" class="form-control" id="currentPassword" required="true">
                       </div>
                     </div>
 
                     <div class="row mb-3">
                       <label for="newPassword" class="col-md-4 col-lg-3 col-form-label">New Password</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="newpassword" type="password" class="form-control" id="newPassword">
+                        <input name="newpassword" type="password" class="form-control" id="newPassword" required="true">
                       </div>
                     </div>
 
                     <div class="row mb-3">
                       <label for="renewPassword" class="col-md-4 col-lg-3 col-form-label">Re-enter New Password</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="renewpassword" type="password" class="form-control" id="renewPassword">
+                        <input name="renewpassword" type="password" class="form-control" id="renewPassword" required="true">
                       </div>
                     </div>
 
                     <div class="text-center">
-                      <button type="submit" class="btn btn-primary">Change Password</button>
+                      <button id="changePassword" type="button" class="btn btn-primary">Change Password</button>
                     </div>
                   </form><!-- End Change Password Form -->
 
@@ -282,7 +282,29 @@
   <script>
         
         
-        $("#submit").on("click", function(event){
+  $("#changePassword").on("click", function(event){
+            
+            let password=document.getElementById("currentPassword").value;
+            let newpassword=document.getElementById("newPassword").value;
+            let renewpassword=document.getElementById("renewPassword").value;
+            let userId=localStorage.getItem("userId");
+            if(renewpassword!=newpassword)
+            {
+              alert("New-Password Mismatches with the Re-enter New Password");
+            }
+            else
+            {
+            const apiData=    {
+                user_id:userId,
+                old_password:password,
+                password:newpassword
+            }  
+            console.log('apiData'+JSON.stringify(apiData));
+            
+            changePassword(apiData);
+          }
+  });
+  $("#submit").on("click", function(event){
             
             let sponser_name=document.getElementById("fullName").value;
             let sponser_email=document.getElementById("sponserEmail").value;
