@@ -25,15 +25,18 @@
   <link href="boot\assests\vendor\quill\quill.snow.css" rel="stylesheet">
   <link href="boot\assests\vendor\quill\quill.bubble.css" rel="stylesheet">
   <link href="boot\assests\vendor\remixicon\remixicon.css" rel="stylesheet">
-  <link href="boot\assests\vendor\simple-datatables\style.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.min.js" integrity="sha512-F+u8eWHrfY8Xw9BLzZ8rG/0wIvs0y+JyRJrXjp3VjtFPylAEEGwKbua5Ip/oiVhaTDaDs4eU2Xtsxjs/9ag2bQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="boot\assests\js\apifunctions.js"></script>
+  
+  <script type="text/javascript" src="boot\assests\js\apifunctions.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <!-- Template Main CSS File -->
   <link href="boot\assests\css\style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+  
+  
   <script>
-    let token=localStorage.getItem("token"); 
-    let sponserId=localStorage.getItem("sponserId");
+    var token=localStorage.getItem("token"); 
+    var sponserId=localStorage.getItem("sponserId");
+    var userId=localStorage.getItem("userId");
     console.log("Token in localStorage"+token);
     if(token==null)
     {

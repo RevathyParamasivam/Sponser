@@ -1,11 +1,12 @@
 
+
 function loginApi(username, password) {
 
     const apiData = {
         "username": username,
         "password": password
     }
-    console.log("Credentials"+JSON.stringify(apiData));
+    console.log("Credentials" + JSON.stringify(apiData));
     $.ajax({
         url: "https://dev.gemsbihar.info/api/api/v1/Auth/login",
         type: "POST",
@@ -18,7 +19,10 @@ function loginApi(username, password) {
             localStorage.setItem("token", data.result['token']);
             localStorage.setItem("sponserId", data.result['sponsor_id']);
             localStorage.setItem("userId", data.result['user_id']);
-            console.log("User_id" + data.result['user_id']);
+            //console.log("User_id" + data.result['user_id']);
+            // $.POST('mysponsership.php', {'sponserId':data.result['sponsor_id'], function(data){  
+            //}});
+
             window.location = 'ProfileController';
             alert("Login Successfull");
         },
@@ -71,6 +75,25 @@ function saveSponserDetails(sponsorData) {
             alert('Error occured : ' + thrownError + '\najaxOptions : ' + ajaxOptions + '\nxhr : ' + xhr);
         }
     });
+}
+function saveSponsershipDetails(sponsorshipData) {
+    $.ajax({
+        url: "https://dev.gemsbihar.info/api/api/v1/sponsor/saveSponsorship",
+        type: "POST",
+        data: JSON.stringify(sponsorshipData),
+        cache: false,
+        dataType: "json",
+        responseType: "JSON",
+        success: function (data) {
+            console.log(data);
+            alert("Record added successfully");
+        },
+        error: function (xhr, ajaxOptions, thrownError) {
+            console.log(xhr, thrownError)
+            alert('Error occured : ' + thrownError + '\najaxOptions : ' + ajaxOptions + '\nxhr : ' + xhr);
+        }
+    });
+
 }
 function getSponserDetails(sponsorId) {
     $.ajax({
@@ -178,7 +201,7 @@ function updateState1(apiName, id = '', mapId = '') {
             arraylength = process.result.length;
             const result = process.result;
             //console.log(JSON.stringify(process.result));
-            list.length=0;
+            list.length = 0;
             if (list) {
                 for (let i = 0; i < arraylength; i++) {
                     if (apiName == 'state') {
@@ -287,5 +310,84 @@ function updateDistrict(district_id, districtName) {
                     list1[i].selected = true
             }
         }
+    }
+}
+
+function show_Sponsership() {
+    let URL = "https://dev.gemsbihar.info/api/api/v1/sponsorship/getAll/" + localStorage.getItem("sponserId");
+    console.log("URL" + URL);
+    $.ajax({
+        url: URL,
+        type: "GET",
+        cache: false,
+        dataType: "json",
+        responseType: "JSON",
+        success: function (data) {
+            console.log(data);
+            var html = '';
+            var i;
+            var dataTableData=[];
+            let arraylength = data.result.length;
+            const result = data.result;
+            for (i = 0; i < arraylength; i++) {
+                html += '<tr>' +
+                    '<td>' + (i+1) + '</td>' +
+                    '<td>'+dateconversion(result[i].created_at)+'</td>'+
+                    '<td>' + result[i].sponsorship_module + '</td>' +
+                    '<td>' + isRecurring(result[i].is_monthly) + '</td>' +
+                    '<td>' + result[i].amount + '</td>' + 
+                    '<td>' + statusChecking(result[i].status) + '</td>' +                  
+                    '<td>' +'</td>' +
+                    '</tr>';
+                    dataTableData.push({
+                        "sno":(i+1),
+                        "dateCreated":dateconversion(result[i].created_at),
+                        "module":result[i].sponsorship_module,
+                        "recurring":isRecurring(result[i].is_monthly),
+                        "amount":result[i].amount,
+                        "status": statusChecking(result[i].status) 
+                    });
+            }
+            
+           $('#show_data').html(html);
+           
+        },
+        error: function (xhr, ajaxOptions, thrownError) {
+            console.log(xhr, thrownError);
+            alert("Internal Server Error");
+        }
+    });
+}
+function statusChecking(data)
+{
+    switch (data) {
+        case '0':
+            return 'Cancelled';
+            break;
+        case '1':
+            return 'Completed';
+            break;
+        case '2':
+            return 'Active';
+            break;
+        case '3':
+            return 'Pending';
+            break;
+        default:
+            break;
+    }
+
+}
+function isRecurring(data)
+{
+    switch (data) {
+        case '0':
+            return 'No';
+            break;
+        case '1':
+            return 'Monthly';
+            break;
+        default:
+            break;
     }
 }

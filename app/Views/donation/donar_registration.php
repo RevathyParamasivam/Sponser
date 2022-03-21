@@ -378,21 +378,9 @@
             let is_missionary_recurring=false;if(missionary_monthly.checked) is_missionary_recurring=true;    
             let is_child_recurring=false;if(child_monthly.checked) is_child_recurring=true;
 
-            const apiData=    {
-                is_whats_app: is_whats_ap,     
-                promotional_office:"", 
-                lang_id:"",
-                name:sponser_name,
-                email_id:sponser_email, 
-                mobile_no:sponser_mobile, 
-                place:place,
-                country_code:country_code,
-                dob:"",
-                title:"", 
-                do_marraige:"", 
-                newsletter:"",
-                sponsorship : [
-                        {   
+            let apiData=[];
+            if(general_amount!=0)
+            apiData.push({   
                             sponsorship_module:"General",
                             remarks:general_remarks,
                             is_monthly:"" ,
@@ -410,8 +398,9 @@
                             place:'',
                             dept_date_time:'', 
                             date_time:''
-                        },
-                        {   
+                        });
+            if(missionary_amount!=0)
+            apiData.push({   
                             sponsorship_module:"Missionary",
                             remarks:'',
                             is_monthly:is_missionary_recurring,
@@ -429,8 +418,9 @@
                             place:'',
                             dept_date_time:'', 
                             date_time:''
-                        },
-                        {   
+                        });
+            if(child_amount!=0)      
+            apiData.push({   
                             sponsorship_module:"Child",
                             remarks:'',
                             is_monthly:is_child_recurring,
@@ -448,8 +438,9 @@
                             place:'',
                             dept_date_time:'', 
                             date_time:''
-                        },
-                        {   
+                        });
+            if(church_amount!=0)
+            apiData.push({   
                             sponsorship_module:"Church",
                             remarks:church_remarks,
                             is_monthly:'',
@@ -467,11 +458,25 @@
                             place:'',
                             dept_date_time:'', 
                             date_time:''
-                        }
-                ] 
+                        });
+
+            const apiData_sponser=    {
+                is_whats_app: is_whats_ap,     
+                promotional_office:"", 
+                lang_id:"",
+                name:sponser_name,
+                email_id:sponser_email, 
+                mobile_no:sponser_mobile, 
+                place:place,
+                country_code:country_code,
+                dob:"",
+                title:"", 
+                do_marraige:"", 
+                newsletter:"",
+                sponsorship : apiData
             }  
-            console.log('apiData'+JSON.stringify(apiData));
-            saveSponserDetails(apiData);
+            console.log('apiData'+JSON.stringify(apiData_sponser));
+            saveSponserDetails(apiData_sponser);
             /*
            $.ajax({
            url: "https://dev.gemsbihar.info/api/api/v1/sponsor/save",

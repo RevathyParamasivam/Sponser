@@ -1,0 +1,192 @@
+CRITICAL - 2022-03-19 06:06:14 --> syntax error, unexpected identifier "getSponserId", expecting ")"
+#0 D:\apps\htdocs\Sponser\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 D:\apps\htdocs\Sponser\system\Common.php(1097): CodeIgniter\View\View->render('donation/myspon...', Array, true)
+#2 D:\apps\htdocs\Sponser\app\Controllers\MySponsership.php(10): view('donation/myspon...')
+#3 D:\apps\htdocs\Sponser\system\CodeIgniter.php(824): App\Controllers\MySponsership->index()
+#4 D:\apps\htdocs\Sponser\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MySponsership))
+#5 D:\apps\htdocs\Sponser\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\apps\htdocs\Sponser\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-19 06:07:26 --> syntax error, unexpected identifier "r", expecting ")"
+#0 D:\apps\htdocs\Sponser\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 D:\apps\htdocs\Sponser\system\Common.php(1097): CodeIgniter\View\View->render('donation/myspon...', Array, true)
+#2 D:\apps\htdocs\Sponser\app\Controllers\MySponsership.php(10): view('donation/myspon...')
+#3 D:\apps\htdocs\Sponser\system\CodeIgniter.php(824): App\Controllers\MySponsership->index()
+#4 D:\apps\htdocs\Sponser\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MySponsership))
+#5 D:\apps\htdocs\Sponser\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\apps\htdocs\Sponser\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-19 06:07:44 --> syntax error, unexpected identifier "r", expecting ")"
+#0 D:\apps\htdocs\Sponser\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 D:\apps\htdocs\Sponser\system\Common.php(1097): CodeIgniter\View\View->render('donation/myspon...', Array, true)
+#2 D:\apps\htdocs\Sponser\app\Controllers\MySponsership.php(10): view('donation/myspon...')
+#3 D:\apps\htdocs\Sponser\system\CodeIgniter.php(824): App\Controllers\MySponsership->index()
+#4 D:\apps\htdocs\Sponser\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MySponsership))
+#5 D:\apps\htdocs\Sponser\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\apps\htdocs\Sponser\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-19 06:08:10 --> Call to undefined function getSponserId()
+#0 D:\apps\htdocs\Sponser\system\View\View.php(214): include()
+#1 D:\apps\htdocs\Sponser\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\apps\htdocs\Sponser\system\Common.php(1097): CodeIgniter\View\View->render('donation/myspon...', Array, true)
+#3 D:\apps\htdocs\Sponser\app\Controllers\MySponsership.php(10): view('donation/myspon...')
+#4 D:\apps\htdocs\Sponser\system\CodeIgniter.php(824): App\Controllers\MySponsership->index()
+#5 D:\apps\htdocs\Sponser\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MySponsership))
+#6 D:\apps\htdocs\Sponser\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\apps\htdocs\Sponser\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-19 06:10:38 --> syntax error, unexpected token ","
+#0 D:\apps\htdocs\Sponser\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 D:\apps\htdocs\Sponser\system\Common.php(1097): CodeIgniter\View\View->render('donation/myspon...', Array, true)
+#2 D:\apps\htdocs\Sponser\app\Controllers\MySponsership.php(10): view('donation/myspon...')
+#3 D:\apps\htdocs\Sponser\system\CodeIgniter.php(824): App\Controllers\MySponsership->index()
+#4 D:\apps\htdocs\Sponser\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MySponsership))
+#5 D:\apps\htdocs\Sponser\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\apps\htdocs\Sponser\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-19 06:11:24 --> syntax error, unexpected token "?"
+#0 D:\apps\htdocs\Sponser\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 D:\apps\htdocs\Sponser\system\Common.php(1097): CodeIgniter\View\View->render('donation/myspon...', Array, true)
+#2 D:\apps\htdocs\Sponser\app\Controllers\MySponsership.php(10): view('donation/myspon...')
+#3 D:\apps\htdocs\Sponser\system\CodeIgniter.php(824): App\Controllers\MySponsership->index()
+#4 D:\apps\htdocs\Sponser\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MySponsership))
+#5 D:\apps\htdocs\Sponser\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\apps\htdocs\Sponser\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-19 06:12:17 --> Call to undefined function getSponserId()
+#0 D:\apps\htdocs\Sponser\system\View\View.php(214): include()
+#1 D:\apps\htdocs\Sponser\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\apps\htdocs\Sponser\system\Common.php(1097): CodeIgniter\View\View->render('donation/myspon...', Array, true)
+#3 D:\apps\htdocs\Sponser\app\Controllers\MySponsership.php(10): view('donation/myspon...')
+#4 D:\apps\htdocs\Sponser\system\CodeIgniter.php(824): App\Controllers\MySponsership->index()
+#5 D:\apps\htdocs\Sponser\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MySponsership))
+#6 D:\apps\htdocs\Sponser\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\apps\htdocs\Sponser\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-19 06:15:16 --> syntax error, unexpected token "echo"
+#0 D:\apps\htdocs\Sponser\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 D:\apps\htdocs\Sponser\system\Common.php(1097): CodeIgniter\View\View->render('donation/myspon...', Array, true)
+#2 D:\apps\htdocs\Sponser\app\Controllers\MySponsership.php(10): view('donation/myspon...')
+#3 D:\apps\htdocs\Sponser\system\CodeIgniter.php(824): App\Controllers\MySponsership->index()
+#4 D:\apps\htdocs\Sponser\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MySponsership))
+#5 D:\apps\htdocs\Sponser\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\apps\htdocs\Sponser\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-19 06:15:36 --> syntax error, unexpected token ","
+#0 D:\apps\htdocs\Sponser\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 D:\apps\htdocs\Sponser\system\Common.php(1097): CodeIgniter\View\View->render('donation/myspon...', Array, true)
+#2 D:\apps\htdocs\Sponser\app\Controllers\MySponsership.php(10): view('donation/myspon...')
+#3 D:\apps\htdocs\Sponser\system\CodeIgniter.php(824): App\Controllers\MySponsership->index()
+#4 D:\apps\htdocs\Sponser\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MySponsership))
+#5 D:\apps\htdocs\Sponser\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\apps\htdocs\Sponser\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-19 06:16:21 --> fopen(https://dev.gemsbihar.info/api/api/v1/sponsorship/getAll/&lt;script type=&quot;text/javascript&quot;&gt;getSponserId();&lt;/script&gt;): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(https://d...', 'D:\\apps\\htdocs\\...', 62)
+#1 D:\apps\htdocs\Sponser\app\Views\donation\mysponsership.php(62): fopen('https://dev.gem...', 'r')
+#2 D:\apps\htdocs\Sponser\system\View\View.php(214): include('D:\\apps\\htdocs\\...')
+#3 D:\apps\htdocs\Sponser\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 D:\apps\htdocs\Sponser\system\Common.php(1097): CodeIgniter\View\View->render('donation/myspon...', Array, true)
+#5 D:\apps\htdocs\Sponser\app\Controllers\MySponsership.php(10): view('donation/myspon...')
+#6 D:\apps\htdocs\Sponser\system\CodeIgniter.php(824): App\Controllers\MySponsership->index()
+#7 D:\apps\htdocs\Sponser\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MySponsership))
+#8 D:\apps\htdocs\Sponser\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\apps\htdocs\Sponser\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-19 06:18:05 --> fopen(https://dev.gemsbihar.info/api/api/v1/sponsorship/getAll/&lt;script type=&quot;text/javascript&quot;&gt;getSponserId();&lt;/script&gt;): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(https://d...', 'D:\\apps\\htdocs\\...', 63)
+#1 D:\apps\htdocs\Sponser\app\Views\donation\mysponsership.php(63): fopen('https://dev.gem...', 'r')
+#2 D:\apps\htdocs\Sponser\system\View\View.php(214): include('D:\\apps\\htdocs\\...')
+#3 D:\apps\htdocs\Sponser\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 D:\apps\htdocs\Sponser\system\Common.php(1097): CodeIgniter\View\View->render('donation/myspon...', Array, true)
+#5 D:\apps\htdocs\Sponser\app\Controllers\MySponsership.php(10): view('donation/myspon...')
+#6 D:\apps\htdocs\Sponser\system\CodeIgniter.php(824): App\Controllers\MySponsership->index()
+#7 D:\apps\htdocs\Sponser\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MySponsership))
+#8 D:\apps\htdocs\Sponser\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\apps\htdocs\Sponser\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-19 06:18:25 --> fopen(https://dev.gemsbihar.info/api/api/v1/sponsorship/getAll/&lt;script type=&quot;text/javascript&quot;&gt;getSponserId();&lt;/script&gt;): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(https://d...', 'D:\\apps\\htdocs\\...', 63)
+#1 D:\apps\htdocs\Sponser\app\Views\donation\mysponsership.php(63): fopen('https://dev.gem...', 'r')
+#2 D:\apps\htdocs\Sponser\system\View\View.php(214): include('D:\\apps\\htdocs\\...')
+#3 D:\apps\htdocs\Sponser\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 D:\apps\htdocs\Sponser\system\Common.php(1097): CodeIgniter\View\View->render('donation/myspon...', Array, true)
+#5 D:\apps\htdocs\Sponser\app\Controllers\MySponsership.php(10): view('donation/myspon...')
+#6 D:\apps\htdocs\Sponser\system\CodeIgniter.php(824): App\Controllers\MySponsership->index()
+#7 D:\apps\htdocs\Sponser\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MySponsership))
+#8 D:\apps\htdocs\Sponser\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\apps\htdocs\Sponser\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-19 06:19:22 --> fopen(https://dev.gemsbihar.info/api/api/v1/sponsorship/getAll/&lt;script type=&quot;text/javascript&quot;&gt;getSponserId();&lt;/script&gt;): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(https://d...', 'D:\\apps\\htdocs\\...', 63)
+#1 D:\apps\htdocs\Sponser\app\Views\donation\mysponsership.php(63): fopen('https://dev.gem...', 'r')
+#2 D:\apps\htdocs\Sponser\system\View\View.php(214): include('D:\\apps\\htdocs\\...')
+#3 D:\apps\htdocs\Sponser\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 D:\apps\htdocs\Sponser\system\Common.php(1097): CodeIgniter\View\View->render('donation/myspon...', Array, true)
+#5 D:\apps\htdocs\Sponser\app\Controllers\MySponsership.php(10): view('donation/myspon...')
+#6 D:\apps\htdocs\Sponser\system\CodeIgniter.php(824): App\Controllers\MySponsership->index()
+#7 D:\apps\htdocs\Sponser\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MySponsership))
+#8 D:\apps\htdocs\Sponser\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\apps\htdocs\Sponser\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-19 06:19:44 --> fopen(https://dev.gemsbihar.info/api/api/v1/sponsorship/getAll/&lt;script type=&quot;text/javascript&quot;&gt;getSponserId();&lt;/script&gt;): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(https://d...', 'D:\\apps\\htdocs\\...', 63)
+#1 D:\apps\htdocs\Sponser\app\Views\donation\mysponsership.php(63): fopen('https://dev.gem...', 'r')
+#2 D:\apps\htdocs\Sponser\system\View\View.php(214): include('D:\\apps\\htdocs\\...')
+#3 D:\apps\htdocs\Sponser\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 D:\apps\htdocs\Sponser\system\Common.php(1097): CodeIgniter\View\View->render('donation/myspon...', Array, true)
+#5 D:\apps\htdocs\Sponser\app\Controllers\MySponsership.php(10): view('donation/myspon...')
+#6 D:\apps\htdocs\Sponser\system\CodeIgniter.php(824): App\Controllers\MySponsership->index()
+#7 D:\apps\htdocs\Sponser\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MySponsership))
+#8 D:\apps\htdocs\Sponser\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\apps\htdocs\Sponser\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-19 06:20:26 --> Undefined property: stdClass::$countryName
+#0 D:\apps\htdocs\Sponser\app\Views\donation\mysponsership.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\apps\\htdocs\\...', 70)
+#1 D:\apps\htdocs\Sponser\system\View\View.php(214): include('D:\\apps\\htdocs\\...')
+#2 D:\apps\htdocs\Sponser\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\apps\htdocs\Sponser\system\Common.php(1097): CodeIgniter\View\View->render('donation/myspon...', Array, true)
+#4 D:\apps\htdocs\Sponser\app\Controllers\MySponsership.php(10): view('donation/myspon...')
+#5 D:\apps\htdocs\Sponser\system\CodeIgniter.php(824): App\Controllers\MySponsership->index()
+#6 D:\apps\htdocs\Sponser\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MySponsership))
+#7 D:\apps\htdocs\Sponser\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\apps\htdocs\Sponser\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-19 06:29:20 --> Undefined array key "sponserId"
+#0 D:\apps\htdocs\Sponser\app\Views\donation\mysponsership.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\apps\\htdocs\\...', 61)
+#1 D:\apps\htdocs\Sponser\system\View\View.php(214): include('D:\\apps\\htdocs\\...')
+#2 D:\apps\htdocs\Sponser\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\apps\htdocs\Sponser\system\Common.php(1097): CodeIgniter\View\View->render('donation/myspon...', Array, true)
+#4 D:\apps\htdocs\Sponser\app\Controllers\MySponsership.php(10): view('donation/myspon...')
+#5 D:\apps\htdocs\Sponser\system\CodeIgniter.php(824): App\Controllers\MySponsership->index()
+#6 D:\apps\htdocs\Sponser\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MySponsership))
+#7 D:\apps\htdocs\Sponser\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\apps\htdocs\Sponser\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-19 06:32:07 --> Undefined array key "sponserId"
+#0 D:\apps\htdocs\Sponser\app\Views\donation\mysponsership.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\apps\\htdocs\\...', 61)
+#1 D:\apps\htdocs\Sponser\system\View\View.php(214): include('D:\\apps\\htdocs\\...')
+#2 D:\apps\htdocs\Sponser\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\apps\htdocs\Sponser\system\Common.php(1097): CodeIgniter\View\View->render('donation/myspon...', Array, true)
+#4 D:\apps\htdocs\Sponser\app\Controllers\MySponsership.php(10): view('donation/myspon...')
+#5 D:\apps\htdocs\Sponser\system\CodeIgniter.php(824): App\Controllers\MySponsership->index()
+#6 D:\apps\htdocs\Sponser\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MySponsership))
+#7 D:\apps\htdocs\Sponser\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\apps\htdocs\Sponser\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-19 06:33:27 --> Undefined array key "sponserId"
+#0 D:\apps\htdocs\Sponser\app\Views\donation\mysponsership.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\apps\\htdocs\\...', 61)
+#1 D:\apps\htdocs\Sponser\system\View\View.php(214): include('D:\\apps\\htdocs\\...')
+#2 D:\apps\htdocs\Sponser\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\apps\htdocs\Sponser\system\Common.php(1097): CodeIgniter\View\View->render('donation/myspon...', Array, true)
+#4 D:\apps\htdocs\Sponser\app\Controllers\MySponsership.php(10): view('donation/myspon...')
+#5 D:\apps\htdocs\Sponser\system\CodeIgniter.php(824): App\Controllers\MySponsership->index()
+#6 D:\apps\htdocs\Sponser\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MySponsership))
+#7 D:\apps\htdocs\Sponser\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\apps\htdocs\Sponser\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
